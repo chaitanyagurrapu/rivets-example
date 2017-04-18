@@ -19,7 +19,7 @@ Make a new html file and write the below markup in it. Title this file "index.ht
 
   <link rel="stylesheet" href="candy-shop.css">
   <script type="text/javascript"
-      src="http://cdn.rawgit.com/mikeric/rivets/master/dist/rivets.min.js"></script>
+      src="https://cdnjs.cloudflare.com/ajax/libs/rivets/0.9.6/rivets.bundled.min.js"></script>
   <body>
     <div id="candy-shop">
       <h1>{ data.title }</h1>
