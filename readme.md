@@ -273,7 +273,6 @@ var data = {
       }
 
       bag.splice(index, 1);
-      updatePrice(model.data);
     }
   };
 ```
@@ -442,13 +441,13 @@ Now we just have to call `updatePrice` whenever the bag is manipulated. Since al
 
       bag.push(product);
       bag[bag.length - 1].quantity = 1;
-      updatePrice(model.data);
+      model.controller.updatePrice(model.data);
     },
 
     addItem: function(e, model) {
 
       model.data.bag[model.index].quantity++;
-      model.controller.updatePrice(model.data);
+      updatePrice(model.data);
     },
 
     removeItem: function(e, model) {
